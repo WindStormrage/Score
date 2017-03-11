@@ -16,7 +16,7 @@
             </view>
             <view wx:if="{{score.length===0}}">
                 <view class="head"></view>
-                该阶段没有成绩！请重新选择年份！
+                <view class="alert">{{alert}}</view>
                 <view class="head"></view>
             </view>
         </view>

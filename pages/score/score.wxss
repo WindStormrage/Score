@@ -5,6 +5,9 @@ text{
     text-align: center;
     font-size: 50rpx;
 }
+.alert{
+    margin:30rpx;
+}
 .title{
     margin: 70rpx;
 }
