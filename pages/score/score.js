@@ -26,7 +26,7 @@ Page({
             this.setData({
             score: cData
         })
-        }else{
+        }/*else{
             var cData=this.data.score;
             cData = [{Subject:'高数',Fraction: '90',color:'fraction1'}, //#4496DC优秀fraction1
                     {Subject:'数据结构',Fraction: '80',color:'fraction2'},//#95BE81良好fraction2
@@ -36,13 +36,14 @@ Page({
             this.setData({
             score: cData
         })
-        }
-    },
+        }*/
+    }/*,
     toIndex : function(){
         wx.switchTab({
             url: '../index/index'
         })
-    }
+    }*/
+
 })
 
 

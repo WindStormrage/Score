@@ -1,15 +1,23 @@
 /* pages/score/score.wxss */
 
 text{
-    display:block ;
+    display: inline;
     text-align: center;
     font-size: 50rpx;
 }
+.title{
+    margin: 70rpx;
+}
 .choice{
-    color: #10AEFF;
+    margin: 70rpx;
+    color: #576b95;
+}
+.cell{
+    height: 25rpx;
+    font-size: 15px;
 }
 .head{
-    height:60rpx;
+    height: 60rpx;
 }
 button{
     width: 100%;
@@ -29,3 +37,9 @@ button{
 .fraction5{
     color: #E81123;
 }
+
+
+
+/*:
+上面的圆12345是一个scroll-view
+*/
