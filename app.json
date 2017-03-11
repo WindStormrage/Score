@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/score/score",
+    "pages/index2/index2"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ccsu",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color" : "#dddddd",
+    "selectedColor" : "#3cc51f",
+    "backgroundColor" : "#ffffff",
+    "list" : [{
+              "pagePath" : "pages/index/index",
+              "text" : "第一个",
+              "iconPath" : "images/001.png",
+              "selectedIconPath" : "images/002.png"
+            },
+            { "pagePath" : "pages/index2/index2",
+              "text" : "第二个",
+              "iconPath" : "images/001.png",
+              "selectedIconPath" : "images/002.png"
+    }]
+  }
+}

@@ -1,0 +1,28 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="section">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="head"></view>
+            <view class="picker">
+              <text>请选择年份</text>
+              <text class="choice">{{array[index]}}</text>
+            </view>
+          </picker>
+        </view>
+        <view class="weui-cells__title">{{data}}</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view wx:if="{{score.length!=0}}" wx:for="{{score}}" wx:key="unique" class="weui-cell">
+                <view class="weui-cell__bd">{{item.Subject}}</view>
+                <view class="weui-cell__ft {{item.color}}">{{item.Fraction}}</view>
+            </view>
+            <view wx:if="{{score.length===0}}">
+                <view class="head"></view>
+                该阶段没有成绩！请重新选择年份！
+                <view class="head"></view>
+            </view>
+        </view>
+        <view>
+            <button type="default" bindtap="toIndex"> 返回 </button>
+        </view>
+    </view>
+</view>

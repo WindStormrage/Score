@@ -1,0 +1,31 @@
+/* pages/score/score.wxss */
+
+text{
+    display:block ;
+    text-align: center;
+    font-size: 50rpx;
+}
+.choice{
+    color: #10AEFF;
+}
+.head{
+    height:60rpx;
+}
+button{
+    width: 100%;
+}
+.fraction1{
+    color: #4496DC;
+}
+.fraction2{
+    color: #95BE81;
+}
+.fraction3{
+    color: #D9E075;
+}
+.fraction4{
+    color: #F8CC77;
+}
+.fraction5{
+    color: #E81123;
+}
