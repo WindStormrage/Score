@@ -1,0 +1,146 @@
+.hd{
+    display: block;/* //块级元素 */
+    text-align: center;/* //水平居中 */
+    margin: 30rpx;/* //上下留位置 */
+    color: #60bce5;
+    font-size: 70rpx;
+}
+.choose{
+    justify-content: center;/* //选择的那一行居中 */
+    margin:30rpx 0rpx 50rpx 0rpx;/* //上下留位置 */
+    display: flex;/* //使用flex布局 */
+}
+.text_all{
+    text-align:center;/* //文字居中 */
+    line-height:50rpx;/* //行高，垂直居中 */
+    color:#eeeeee;
+}
+.all{
+    background: #60BCE5;
+    margin: 0rpx 10rpx 0rpx 10rpx;/* //左右留位置 */
+    width: 65rpx;
+    display: inline-block;/* //行元素 */
+    border:1rpx solid #60BCE5;/* //为了圆角 */
+    border-radius: 50rpx;/* //圆角 */
+}
+scroll-view{
+    white-space: nowrap;/* //文字不换行 */
+    display: flex;/* //flex布局 */
+    width: 84%;/* //设置宽度，不设置会在右边出来 */
+}
+.scroll{
+    width: 100rpx;/* //圆形的高宽 */
+    height: 100rpx;
+    display: inline-block;/* //行内块元素 */
+    border:5rpx solid #60BCE5;/* //为圆角 */
+    border-radius: 100rpx;/* //圆角 */
+    color: #eeeeee;
+    margin: 0rpx 10rpx 0rpx 10rpx;/* //每个圆形距离 */
+
+}
+.text_scroll{
+    line-height:100rpx;/* //垂直居中 */
+}
+
+/*接下来是表格的css*/
+.tr{
+    display: -webkit-flex;
+    display: flex;/* //flez布局 */
+    font-size:30rpx;
+    justify-content: space-between;/* //居中 */
+    align-items: center;/* //垂直居中 */
+}
+.day{
+    flex-shrink:20;/* //第一列缩小 */
+}
+.td{
+    border: 1rpx solid #b2b2b2;
+}
+.week{
+    white-space: nowrap;/* //强制不换行 */
+}
+.week .td{
+    height:100rpx;/* //第一行小一些 */
+    width:100rpx;
+    line-height:100rpx;
+}
+.clas .td{
+    height:225rpx;/* //后面的大一些 */
+    width:100rpx;
+}
+.td_day{
+    line-height:112rpx;
+}
+.td_data{
+    font-size: 27rpx;
+    line-height:28rpx;
+    text-align: center;
+    word-wrap:break-word;
+}
+text{
+    display: block;
+    text-align: center;
+}
+
+/*接下来是每日课表的css*/
+
+.day_table{
+    height: 891rpx;
+    width: 100%;
+}
+.morning{
+    height: 297rpx;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;/* //flez布局 */
+    justify-content: center;/*主轴上居中方式对齐*/
+    align-items: center;/*交叉轴上居中方式对齐*/
+}
+.afternoon{
+    height: 297rpx;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;/* //flez布局 */
+    justify-content: center;/*主轴上居中方式对齐*/
+    align-items: center;
+}
+.night{
+    height: 297rpx;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;/* //flez布局 */
+    justify-content: center;/*主轴上居中方式对齐*/
+    align-items: center;
+}
+.time{
+  height: 296rpx;
+  width: 15%;
+  border: 1rpx solid #b2b2b2;
+  line-height:296rpx;
+  text-align: center;
+}
+.first, .second, .third, .fourth{
+  height: 296rpx;
+  width: 40%;
+    display: -webkit-flex;
+    display: flex;/* //flez布局 */
+    justify-content: space-around;/*主轴上分散方式对齐*/
+    flex-direction: column;/*//垂直分部*/
+}
+.fifth{
+  height: 296rpx;
+  width: 80%;
+    display: -webkit-flex;
+    display: flex;/* //flez布局 */
+    justify-content: space-around;/*主轴上分散方式对齐*/
+    flex-direction: column;/*//垂直分部，主轴为垂直*/
+}
+.section, .subject, .location, .teacher{
+  height: 69rpx;
+  width: 100%;
+  border: 1rpx solid #b2b2b2;
+  display: block;/*换行*/
+  flex-grow:1;/*多余的空间平均分配*/
+  line-height:69rpx;
+  text-align: center;
+}

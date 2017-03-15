@@ -27,5 +27,10 @@ Page({
     wx.navigateTo({
           url: '../score/score'
     })
+  },
+  toTimetable : function(){
+    wx.navigateTo({
+          url: '../timetable/timetable'
+    })
   }
 })

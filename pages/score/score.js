@@ -1,6 +1,5 @@
 var app = getApp()
 
-
 Page({
     data: {
             score: [{Subject:'高数',Fraction: '90',color:'fraction1'}, //#4496DC优秀fraction1

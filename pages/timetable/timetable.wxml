@@ -1,0 +1,81 @@
+<view class="page">
+    <text class="hd" bindtap="listenerButton">{{choice}}></text>
+    <action-sheet hidden="{{actionSheetHidden}}" bindchange="listenerActionSheet" >
+        <block wx:for-items="{{actionSheetItems}}"  wx:key="unique" >
+            <action-sheet-item bindtap="listener{{item.bindtap}}">{{item.txt}}</action-sheet-item>
+        </block>
+        <!--自动隐藏action-sheet-->
+        <action-sheet-cancel>取消</action-sheet-cancel>
+    </action-sheet>
+    <loading hidden="{{loadingHidden}}">更新中...</loading>
+    <toast hidden="{{hiddenToast}}" duration="1500" bindchange="toastHidden" >更新成功!</toast>
+    <view class="choose">
+        <view class="all"><text class="text_all">全  部</text></view>
+        <scroll-view scroll-left="{{scrollLeft}}" scroll-x="true">
+            <view class="scroll" wx:for="{{scroll}}" wx:key="unique" style="background:{{item.background}}"><text class="text_scroll">{{item.txt}}</text></view>
+        </scroll-view>
+    </view>
+    <!-- 这里是全部课表和每一周课表的界面-->
+    <view class="table" style="display:none">
+        <view class="tr week">
+            <view class="td day"></view>
+            <view class="td" wx:for="{{week}}" wx:key="unique" >{{item}}</view>
+        </view>
+        <view class="tr clas" wx:for="{{day}}" wx:key="unique" >
+            <view class="td day td_day">
+                <text>{{item.k1}}</text>
+                <text>{{item.k2}}</text>
+            </view>
+            <view class="td  td_data">{{data_arr[index][0]}}</view>
+            <view class="td  td_data">{{data_arr[index][1]}}</view>
+            <view class="td  td_data">{{data_arr[index][2]}}</view>
+            <view class="td  td_data">{{listData[index][3]}}</view>
+            <view class="td  td_data">{{listData[index][4]}}</view>
+            <view class="td  td_data">{{listData[index][5]}}</view>
+            <view class="td  td_data">{{listData[index][6]}}</view>
+        </view>
+    </view>
+    <!-- 这里要写今日课表和明日课表的界面 -->
+    <view class="day_table" style="display:">
+        <view class="morning">
+            <view class="time">上午</view>
+            <view class="first">
+                <view class="section">第一大节</view>
+                <view class="subject">{{day_data[0].subjectName}}</view>
+                <view class="location">{{day_data[0].location}}</view>
+                <view class="teacher">{{day_data[0].teacher}}</view>
+            </view>
+            <view class="second">
+                <view class="section">第二大节</view>
+                <view class="subject">{{day_data[1].subjectName}}</view>
+                <view class="location">{{day_data[1].location}}</view>
+                <view class="teacher">{{day_data[1].teacher}}</view>
+            </view>
+        </view>
+        <view class="afternoon">
+            <view class="time">下午</view>
+            <view class="third">
+                <view class="section">第三大节</view>
+                <view class="subject">{{day_data[2].subjectName}}</view>
+                <view class="location">{{day_data[2].location}}</view>
+                <view class="teacher">{{day_data[2].teacher}}</view>
+            </view>
+            <view class="fourth">
+                <view class="section">第四大节</view>
+                <view class="subject">{{day_data[3].subjectName}}</view>
+                <view class="location">{{day_data[3].location}}</view>
+                <view class="teacher">{{day_data[3].teacher}}</view>
+            </view>
+        </view>
+        <view class="night">
+            <view class="time">晚上</view>
+            <view class="fifth">
+                <view class="section">第五大节</view>
+                <view class="subject">{{day_data[4].subjectName}}</view>
+                <view class="location">{{day_data[4].location}}</view>
+                <view class="teacher">{{day_data[4].teacher}}</view>
+            </view>
+        </view>
+    </view>
+    <view style="text-align: center" style="display:none" class="weui-label">加载中...</view>
+</view>

@@ -1,9 +1,10 @@
 {
   "pages":[
+    "pages/timetable/timetable",
     "pages/index/index",
+    "pages/index2/index2",
     "pages/logs/logs",
-    "pages/score/score",
-    "pages/index2/index2"
+    "pages/score/score"
   ],
   "window":{
     "backgroundTextStyle":"light",

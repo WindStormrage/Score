@@ -6,5 +6,6 @@
   </view>
   <view>
     <button type="primary" bindtap="toScore">score</button>
+    <button type="primary" bindtap="toTimetable">timetable</button>
   </view>
 </view>
